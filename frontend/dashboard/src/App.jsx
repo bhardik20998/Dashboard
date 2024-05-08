@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import SelectionPage from "./pages/selectionPage/selectionPage";
 import Upload from "./pages/upload/upload";
+import Summary from "./pages/summary/summary";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<SelectionPage />}></Route>
             <Route path="/upload" element={<Upload />}></Route>
+            <Route path="/summary" element={<Summary />}></Route>
           </Routes>
         </Router>
       </div>

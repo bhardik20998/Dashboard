@@ -1,0 +1,48 @@
+.filters-main {
+  right: 0;
+  width: 35vb;
+  height: 100vh;
+  background-color: black;
+
+  overflow-y: scroll;
+  font-family: Helvetica;
+}
+
+.scrollable-div {
+  height: 12vh; /* Set your desired fixed height */
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 6px;
+  margin-top: 3vh;
+  background-color: antiquewhite;
+  font-family: Helvetica;
+}
+
+.filters-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  margin-top: 1vh;
+}
+
+.li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-family: Helvetica;
+}
+.filters-heading {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 4vh;
+  font-family: Helvetica;
+}
+.filters-subheaders {
+  text-align: center;
+  font-size: 19px;
+  font-family: Helvetica;
+  font-weight: 550;
+}

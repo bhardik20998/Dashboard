@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*',]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # Replace with the actual URL of your React app
+]
+
 
 # Application definition
 
@@ -78,8 +82,11 @@ WSGI_APPLICATION = 'dashboard.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'Dashboard',
+        'CLIENT': {
+            'host': 'localhost:27017',  # e.g., 'localhost', 'mongodb://localhost:27017/'
+        }
     }
 }
 
